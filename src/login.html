@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src='js/jquery.js'></script>
+    <script src="js/form_validate.js?v=2"></script>
+    <script  src="js/index.js"></script>
+  </head>
+  <body>   
+    <div style="width:500px;height:100px;">
+      <div id="loading" style="display: none;">
+          <img id="loading-image" src="images/ajax-loader.gif" alt="Validating..." />
+      </div>
+      <div class="container" style="margin-top:10px;">
+        <div class="card"></div>
+        <div class="card">
+          <h1 class="title">
+            Login
+          </h1>
+          <form id="form1">
+            <div class="input-container">
+              <input type="email" id="email" autocomplete="off" required="required"/>
+              <label for="email">Email</label>
+              <div class="bar">
+              </div>
+            </div>
+            <div class="input-container">
+              <input type="password" id="password" required="required"/>
+              <label for="password">Password</label>
+              <div class="bar">
+              </div>
+            </div>
+            <div class="button-container">
+              <button id="submit_btn">
+                <span>
+                  Go
+                </span>
+              </button>
+            </div>
+            <div class="footer">
+              <a id="frgt_pswd" href="">
+                Forgot your password?
+              </a>
+            </div>
+          </form>
+        </div>
+        <div class="card alt">
+          <div  class="toggle" style="background:#ffaa00;">
+          </div>
+          <h1 class="title">Register
+            <div class="close"></div>
+          </h1>
+          <form id="form2">
+            <div class="input-container" >
+              <input type="#{type}" id="sign_username" required="required"/>
+              <label for="#{username}">Username</label>
+              <div class="bar"></div>
+            </div>
+            <div class="input-container">
+              <input type="email" id="sign_email" autocomplete="off" required="required"/>
+                <label for="email">Email</label>
+                <div class="bar"></div>
+            </div>
+            <div class="input-container">
+              <input type="password" id="sign_password" required="required"/>
+              <label for="#{password}">Password</label>
+              <div class="bar"></div>
+            </div>
+            <div class="input-container">
+              <input type="password" id="sign_confirm_password" required="required"/>
+              <label for="#{confirm_pswd}">Repeat Password</label>
+              <div class="bar"></div>
+            </div>
+            <div class="input-container">
+              <input type="number" id="sign_mobile" required="required"/>
+              <label for="#{sign_mobile}">Contact Number</label>
+              <div class="bar"></div>
+            </div>
+            <div class="button-container">
+              <button id="signup_btn">
+                <span>
+                  Next
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

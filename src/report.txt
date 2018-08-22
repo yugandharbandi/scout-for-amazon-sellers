@@ -1,0 +1,5 @@
+I'm working on a chrome extension that helps amazon sellers to know the stats of their competitors, helps them in adding new items to their store by showing the expected monthly sales, revenue and the profit they can get by adding a specified item.
+Since I'm the solo developer for this tool, I designed both front end and back end for this product as well as the pay pal payment gateway so as to facilitate the customers to subscribe to this product.  
+The technologies I'm currently working on are, HTML, CSS, Java script, JQUERY, MYSQL, PHP, Machine Learning.
+While developing this product, I learnt many important things like handling the database for live environment where there can be multiple parallel accesses, what should be done when server fails or something goes wrong from merchant side, came across many security threats and learnt how to tackle them.
+Basically came across the difference between developing a project at industry level and college level.

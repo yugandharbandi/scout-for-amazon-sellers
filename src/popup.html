@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/popup.js"></script>
+  </head>
+  <body>
+    <div id="loading">
+      <img id="loading-image" src="images/ajax-loader.gif" alt="Loading..." />
+    </div>
+    <header>
+      <nav class="navbar navbar-inverse">
+       
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <img src="images/xlogo.png" width="105px" height=auto />
+            </a>
+            <br>
+            <div>
+               
+            </div>
+          </div>
+          <!-- <div>
+            <input type="text" id="myInput"  placeholder="Search.." title="Search here">
+          </div> -->
+          <div style="float: left;">
+              <button id="close_popup" style="float: right;margin-right: -175px;">
+                  X
+                </button>
+            <button type="button" id="btn_logout" style="float: right;display: none;margin-left: 80px;margin-top: 50px;" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-log-out"></span> Log out
+            </button> 
+            <div class="navbar-header" style="border-left: 1.5px solid white; margin: 0px;float: right;" >
+             <h4 class="navbar-brand" style="font-size: 15px; margin :0px;color:#ffbc49">Avg Sales Rank</h4>
+              <div class="ans" style="margin: 0px;">
+              <span id="hd_sales_rank" style=" font-size: 22px; margin: 0px;">0</span>
+              </div>
+            </div>
+            <div class="navbar-header" style="border-left: 1.5px solid white;float: right; margin: 0px;" >
+              <h4 class="navbar-brand" style="font-size: 15px; color:#ffbc49;margin :0px;">Avg Price</h4>
+              <div class="ans" style="margin: 0px;">
+                <span id="hd_price" style=" font-size: 22px; margin: 0px;">0</span>
+              </div>
+            </div>
+            <div class="navbar-header" style="border-left: 1.5px solid white;float: right; margin: 0px;" >
+            <h4 class="navbar-brand" style="font-size: 15px; margin :0px;color:#ffbc49;">Avg # of Reviews</h4>
+            <div class="ans" style="margin: 0px;">
+              <span id="hd_rvws" style=" font-size: 22px; margin: 0px;">0</span>
+              </div>
+            </div>
+            <div class="navbar-header" style="float: right; margin: 0px;" >
+              <h4 class="navbar-brand" style="font-size: 15px; margin :0px;color:#ffbc49;">Results</h4>
+              <div class="ans" style="margin: 0px;">
+                <span id="hd_results" style=" font-size: 22px; margin: 0px;">0</span>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div id="tabular-content">
+      <a id="back2Top" title="Back to top" href="#">&#10148;</a>
+      <table id="rwd-table" border="0" cellpadding="0" cellspacing="0" style="table-layout:fixed;margin-bottom: 10px;" width="940px" >
+        <tr id="tb_header">
+          <th col-xs-1 width="3%">#</th>
+          <th col-xs-1 width="18%" class="facility_header" title="sort by title">Title</th>
+          <th col-xs-1 width="6%" class="facility_header" title="sort by brand">Brand</th>
+          <th col-xs-1 width="7%" class="facility_header" title="sort by price">Price</th>
+          <th col-xs-1 width="7%" title="sort by price">Min Price</th>
+          <th col-xs-1 width="6%" title="sort by reviews"># reviews</th>
+          <th col-xs-1 width="5%" title="sort by rating">Rating</th>
+          <th col-xs-1 width="5%" title="sort by count"># Sellers</th>
+          <th width="7%" title="sort by rank">Rank</th>
+          <th width="6%" title="sort by weight">Weight</th>
+          <th width="10%" title="sort by name">Buy box</th>
+          <th width="5%" title="sort by type">Seller</th>
+          <th width="8%" title="sort by date">Availabile from</th>
+          <th width="7%" title="sort by est. sales">Est. Sales</th>    
+          <th width="7%" title="sort by est. revenue">Est. Revenue</th>    
+          <th width="6%" title="sort by LQS">LQS</th>    
+        </tr>
+      </table>
+      <div id="image_block">
+        <img id="image">
+      </div>
+    </div><br><br>
+    <div class="footer">
+      <div class="footer-container">
+        <p class="copy-rights">&#169; 2017 Copyright Sellergyan </p>
+        <button class="export"><a class="export" style="text-decoration:none;">Export to CSV</a></button>
+        <button id="btn" class="nextPage">Next Page</button>
+      </div>
+    </div>
+  </body>
+</html>
